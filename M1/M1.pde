@@ -1,5 +1,5 @@
 int amplitude = 25;
-int frequency = 25;
+int frequency = 19;
 
 void setup()
 {
@@ -36,6 +36,7 @@ void drawCartesianPlane()
   }
 }
 
+// Quad Func
 void drawQuizNumber1()
 {  
   /*
@@ -55,6 +56,7 @@ void drawQuizNumber1()
   
 }
 
+// Linear Func
 void drawQuizNumber2()
 {  
   /*
@@ -75,6 +77,7 @@ void drawQuizNumber2()
   
 }
 
+// Sin Wave
 void drawQuizNumber3()
 {  
   /*
@@ -93,6 +96,8 @@ void drawQuizNumber3()
   }
 }
 
+
+// Bonus 2 pless
 public void keyPressed()
 {
    
@@ -100,14 +105,27 @@ public void keyPressed()
      
     if (key == 'q')
     {
+      frequency--;
+      println(frequency);
+      
+    }
+     else if (key == 'w')
+    {
       frequency++;
       println(frequency);
       
     }
     
-        if (key == 'w')
+    else if (key == 'a')
+    {
+      amplitude--;
+      println(amplitude);
+      
+    }
+    else if (key == 's')
     {
       amplitude++;
+      println(amplitude);
       
     }
   
