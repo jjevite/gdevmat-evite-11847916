@@ -38,7 +38,7 @@ void draw()
   int rngRed = (int)random(255);
   int rngGreen = (int)random(255);
   int rngBlue = (int)random(255);
-  int rngAlphaAf = (int)random(100, 100);
+  int rngAlphaAf = (int)random(10, 100);
     
   noStroke();
   fill(rngRed, rngGreen, rngBlue, rngAlphaAf);
